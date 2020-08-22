@@ -15,10 +15,12 @@ CC=i686-elf-gcc
 all: $(SOURCES) link
 
 clean:
-	rm sys/*.o kernel
-	rm -rf temp/
-	rm rd_init
-	rm initrd.img
+	-rm sys/*.o kernel
+	-rm -rf temp/
+	-rm rd_init
+	-rm initrd.img
+	-rm -rf isodir/
+	-rm *.iso
 
 link:
 	ld $(LDFLAGS) -o kernel $(SOURCES)

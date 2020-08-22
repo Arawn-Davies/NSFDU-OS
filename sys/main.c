@@ -40,9 +40,8 @@ kernel_start (struct multiboot *mboot_ptr, /* Initial multiboot information, pas
     
     monitor_clear ();
 
-    monitor_write ("Fotix v0.1\n");
-    monitor_write ("Copyright (c) 2016 Fotis Koutoulakis\n");
-    monitor_write ("http://www.fotiskoutoulakis.com\n");
+    monitor_write ("As-Of-Yet-Untitled OS\n");
+    monitor_write ("Copyright (c) 2020 Arawn Davies\n");
     monitor_put ('\n');
 
     /* Initialise all the ISRs and segmentation */
